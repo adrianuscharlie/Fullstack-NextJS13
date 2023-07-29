@@ -47,7 +47,7 @@ const MyProfile = () => {
       data={myPost}
       name={session?.user.name}
       desc={
-        "Welcome to your personalized profile page. Share your exceptional sambatan and inspire others with the power of your imagination"
+        "Selamat datang di halaman profil pribadi Anda. Bagikan sambatan luar biasa Anda dan ilhami orang lain dengan kekuatan imajinasi Anda"
       }
       handleEdit={handleEdit}
       handleDelete={handleDelete}
