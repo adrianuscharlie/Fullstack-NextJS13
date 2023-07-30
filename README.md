@@ -17,6 +17,7 @@ This website is built using Next.js 13 and MongoDB for the database. It has alre
 - Edit Post
 - Delete Post
 - Profile
+- Account Authentication
 
 ## Technologies
 - React JS
