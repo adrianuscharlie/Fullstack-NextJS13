@@ -4,10 +4,10 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className="head_text text-left">
-        <span className="blue_gradient">{type} Sambat</span>
+        <span className="blue_gradient">{type} Quotes</span>
       </h1>
       <p className="desc text-left max-w-md">
-        {type} dan bagikan pengalaman personal anda!
+        {type} and share your meaningful Quotes here
       </p>
       <form
         onSubmit={handleSubmit}
@@ -15,12 +15,12 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       >
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
-            Sambatanmu Cak!
+            Your Quotes
           </span>
           <textarea
             value={post.sambat}
             onChange={(e) => setPost({ ...post, sambat: e.target.value })}
-            placeholder="Write your sambatan here...."
+            placeholder="Write your Quotes here...."
             required
             className="form_textarea"
           />

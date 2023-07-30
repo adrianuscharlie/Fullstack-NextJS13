@@ -18,14 +18,13 @@ const Nav = () => {
   return (
     <nav className="flex-between w-full mb-16 pt-3">
       <Link href={"/"} className="flex gap-2 flex-center">
-        
-        <p className="logo_text text-green-800 font-bold">Sambatdotcom</p>
+        <p className="logo_text text-green-800 font-bold">Kuotes.ID</p>
       </Link>
       <div className="sm:flex hidden">
         {session?.user ? (
           <div className="flex gap-3 md:gap-5">
             <Link className="black_btn" href={"/create-sambat"}>
-              Gawe Sambat
+              Create Quotes
             </Link>
             <button type="button" onClick={signOut} className="outline_btn">
               Sign out
@@ -70,19 +69,26 @@ const Nav = () => {
 
           {toggleDropdown && (
             <div className='dropdown'>
+            <Link
+                href='/'
+                className='dropdown_link'
+                onClick={() => setToggleDropdown(false)}
+              >
+                Home
+              </Link>
               <Link
                 href='/profile'
                 className='dropdown_link'
                 onClick={() => setToggleDropdown(false)}
               >
-                My Profile
+                {session?.user.name} Profile
               </Link>
               <Link
-                href='/create-prompt'
+                href='/create-sambat'
                 className='dropdown_link'
                 onClick={() => setToggleDropdown(false)}
               >
-                Create Prompt
+                Gawe Sambat
               </Link>
               <button
                 type='button'

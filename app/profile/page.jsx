@@ -47,7 +47,7 @@ const MyProfile = () => {
       data={myPost}
       name={session?.user.name}
       desc={
-        "Selamat datang di halaman profil pribadi Anda. Bagikan sambatan luar biasa Anda dan ilhami orang lain dengan kekuatan imajinasi Anda"
+        "Welcome to your profile page. View, edit, and delete your own created quotes!"
       }
       handleEdit={handleEdit}
       handleDelete={handleDelete}

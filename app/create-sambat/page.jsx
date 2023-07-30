@@ -37,7 +37,7 @@ const CreateSambat = () => {
   };
   return (
     <Form
-      type={"Gawe"}
+      type={"Create"}
       post={post}
       setPost={setPost}
       submitting={submitting}

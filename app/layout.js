@@ -4,8 +4,8 @@ import Nav from "@components/Nav";
 
 
 export const metadata = {
-  title: "Sambatdotcom",
-  description: "Create and Share Your Personal Unek Unek Here",
+  title: "Kuotes.ID",
+  description: "Create and Share Your Brilliant Quotes",
 };
 
 export default function RootLayout({ children }) {
