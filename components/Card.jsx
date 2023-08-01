@@ -33,7 +33,7 @@ const Card = ({ post, handleEdit, handleDelete, handleTagClick }) => {
           onClick={handleProfileClick}
         >
           <Image
-            src={post.creator.image}
+            src={post.creator?.image}
             alt="user_image"
             width={40}
             height={40}
