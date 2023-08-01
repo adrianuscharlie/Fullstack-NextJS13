@@ -45,6 +45,24 @@ const Feed = () => {
             }
             fetchPost()
         }else{
+            const handleQuery=async()=>{
+                const hashtagRegex = /#\w+/g;
+                const hashtagsArray = searchText.match(hashtagRegex);
+                try{
+                    const response= await fetch('/api/query',{
+                        method:'POST',
+                        body:JSON.stringify({
+                            hashTag:hashtagsArray
+                        })
+                    })
+                    if(response.ok){
+                        const posts=await response.json()
+                        setPosts(posts)
+                    }
+                }catch(error){
+                    console.log(error)
+                }
+            }
             handleQuery()
         }
     },[searchText])
