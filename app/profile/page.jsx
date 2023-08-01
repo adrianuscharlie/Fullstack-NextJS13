@@ -26,7 +26,7 @@ const MyProfile = () => {
     router.push(`/update-sambat?id=${post._id}`);
   };
   const handleDelete = async (post) => {
-    const hasConfirmed = confirm("Are you sure want to delete this Sambatan?");
+    const hasConfirmed = confirm("Are you sure want to delete this Quotes?");
     if (hasConfirmed) {
       try {
         await fetch(`/api/sambat/${post._id.toString()}`, {

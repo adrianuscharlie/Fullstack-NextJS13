@@ -2,7 +2,7 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
 import Card from './Card'
-const SambatList=({data,handleTagClick})=>{
+const QuotesList=({data,handleTagClick})=>{
     return (
         <div className='mt-16 prompt_layout'>
             {data.map((sambat)=>(
@@ -80,7 +80,7 @@ const Feed = () => {
             <input type='text' placeholder='Search for a tag ' value={searchText} onChange={(e)=>setSearchText(e.target.value)} className='search_input peer'/>
             <button type='button' className='black_btn mx-3' onClick={handleQuery}>Search</button>
         </form>
-        <SambatList data={posts} handleTagClick={(tag)=>{handleTagClick(tag)}}/>
+        <QuotesList data={posts} handleTagClick={(tag)=>{handleTagClick(tag)}}/>
     </section>
   )
 }
